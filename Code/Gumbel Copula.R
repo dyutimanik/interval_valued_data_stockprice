@@ -113,8 +113,6 @@ calculations = function(data) {
 
 # Main
 
-setwd("C://Users//DYUTI MANIK//Desktop//Arnab_Sir//ASMBI//Github//Data//Time")
-
 comp = c("SB", "PG", "IR", "RL", "TC", "HD")
 time = c("1m", "3m", "6m", "1y")
 
@@ -122,7 +120,7 @@ results = list()
 
 for (cmp in comp) {
   for (t in time) {
-    data = read.csv(paste0(t, "//", cmp, ".csv"))
+    data = data = read.csv(file.path("Data", "Time", t, paste0(cmp, ".csv")))
     # Excluding HDFCBANK 1-year data for 25-28Aug'2025
     if (t == "1y" && cmp == "HD") {
       data = data[!(data$DATE %in% c(
@@ -163,5 +161,4 @@ print(results[, c(
 )], row.names = FALSE)
 
 # Saving results
-setwd("C://Users//DYUTI MANIK//Desktop//Arnab_Sir//ASMBI")
-write.csv(results, "gumbel_copula_results.csv", row.names = FALSE)
+write.csv(results, file.path("Results", "gumbel_copula_results.csv"), row.names=FALSE)
