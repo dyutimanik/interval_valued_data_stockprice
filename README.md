@@ -1,6 +1,6 @@
 # Modelling Interval-Valued Data with Applications to Finance
 
-R scripts for the numerical analysis in the manuscript *Modelling Interval-Valued Data with Applications to Finance*.
+R scripts for the simulation studies in the manuscript *Modelling Interval-Valued Data with Applications to Finance*.
 
 ## Code
 
