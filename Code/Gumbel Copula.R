@@ -120,7 +120,7 @@ results = list()
 
 for (cmp in comp) {
   for (t in time) {
-    data = data = read.csv(file.path("Data", "Time", t, paste0(cmp, ".csv")))
+    data = read.csv(file.path("Data", "Time", t, paste0(cmp, ".csv")))
     # Excluding HDFCBANK 1-year data for 25-28Aug'2025
     if (t == "1y" && cmp == "HD") {
       data = data[!(data$DATE %in% c(
