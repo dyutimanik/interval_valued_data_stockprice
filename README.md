@@ -14,7 +14,7 @@ Historical daily stock-price data were obtained from the [NSE India website](htt
 
 The analysis considers six stocks: State Bank of India (SBIN), Power Grid Corporation of India (POWERGRID), IRCTC, Reliance Industries (RELIANCE), Tata Consultancy Services (TCS), and HDFC Bank (HDFCBANK).
 
-Four observation periods are considered: 1 month, 3 months, 6 months, and 1 year. The data include the date, daily high, daily low, and previous closing price.
+Four observation periods are considered: 1 month, 3 months, 6 months, and 1 year. The data include the date, daily open, daily high, daily low, previous closing price and daily closing price.
 
 Organise the CSV files locally as follows:
 
@@ -26,7 +26,7 @@ Data/
 └── 1y/
 ```
 
-Each folder should contain the corresponding stock CSV files, named according to the codes used in the scripts: `SB`, `PG`, `IR`, `RL`, `TC`, and `HD`. The raw stock-price data are not included in this repository and must be obtained independently.
+Each folder should contain the corresponding stock CSV files, named according to the codes used in the scripts: `SB`, `PG`, `IR`, `RL`, `TC`, and `HD`. The raw stock-price data are not included in this repository and must be obtained independently. Ensure that the CSV files follow the same column order as expected by the scripts, particularly that columns 4, 5, and 6 contain the daily high, daily low, and previous closing price, respectively, the order in which it would be downloaded from the portal.
 
 ## Requirements
 
