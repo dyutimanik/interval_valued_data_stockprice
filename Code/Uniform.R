@@ -1,7 +1,6 @@
 rm(list=ls())
 set.seed(1234)
 
-
 # Defining required functions
 
 uniform_est = function(x1,xk,k,n) {
