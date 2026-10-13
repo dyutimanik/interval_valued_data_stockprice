@@ -1,5 +1,5 @@
 rm(list = ls())
-set.seed(1423)
+set.seed(1234)
 
 library(evd)
 library(VineCopula)
