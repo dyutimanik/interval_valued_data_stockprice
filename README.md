@@ -26,7 +26,7 @@ Data/
 └── 1y/
 ```
 
-Each folder should contain the corresponding stock CSV files, named according to the codes used in the scripts: `SB`, `PG`, `IR`, `RL`, `TC`, and `HD`. The raw stock-price data are not included in this repository and must be obtained independently. Ensure that the CSV files follow the same column order as expected by the scripts, particularly that columns 4, 5, and 6 contain the daily high, daily low, and previous closing price, respectively, the order in which it would be downloaded from the portal.
+Each folder should contain the corresponding stock CSV files, named according to the codes used in the scripts: SB, PG, IR, RL, TC, and HD. The raw stock-price data are not included in this repository and must be obtained independently from the NSE India website. Retain the original column order as downloaded from the portal, ensuring that columns 4, 5, and 6 contain the daily high, daily low, and previous closing price, respectively.
 
 ## Requirements
 
