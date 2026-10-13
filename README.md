@@ -14,17 +14,16 @@ Historical daily stock-price data were obtained from the [NSE India website](htt
 
 The analysis considers six stocks: State Bank of India (SBIN), Power Grid Corporation of India (POWERGRID), IRCTC, Reliance Industries (RELIANCE), Tata Consultancy Services (TCS), and HDFC Bank (HDFCBANK).
 
-Four observation periods are considered: 1 month, 3 months, 6 months, and 1 year. For each stock and period, the daily date, high price, low price, and previous closing price are used.
+Four observation periods are considered: 1 month, 3 months, 6 months, and 1 year. The data include the date, daily high, daily low, and previous closing price.
 
 Organise the CSV files locally as follows:
 
 ```text
 Data/
-└── Time/
-    ├── 1m/
-    ├── 3m/
-    ├── 6m/
-    └── 1y/
+├── 1m/
+├── 3m/
+├── 6m/
+└── 1y/
 ```
 
 Each folder should contain the corresponding stock CSV files, named according to the codes used in the scripts: `SB`, `PG`, `IR`, `RL`, `TC`, and `HD`. The raw stock-price data are not included in this repository and must be obtained independently.
@@ -35,4 +34,4 @@ The analysis was implemented in R. The `evd` and `VineCopula` packages are requi
 
 ## Running the Code
 
-Place the data in the directory structure described above and run the scripts in the `Code` folder. The resulting tables are saved in the `Results` folder.
+Set the R working directory to the repository root. Place the data in the directory structure described above and run the scripts in the `Code` folder. The resulting tables are saved in the `Results` folder.
